@@ -1,3 +1,6 @@
+# https://github.com/Sampling2631/lab11-JT-MT
+# Partner 1: John Thies
+# Partner 2: Mathias Tanangkingsing
 import unittest
 from calculator import *
 
