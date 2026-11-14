@@ -6,22 +6,11 @@ One function per operation, in order.
 """
 import math
 
-def square_root(a):
-    if a < 0:
-        raise ValueError("Cannot take the square root of a negative number.")
-    return math.sqrt(a)
-
-def hypotenuse(a, b):
-    return math.hypot(a, b)
-
 # First example
-
-import math
-
 def add(a, b): 
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -32,21 +21,6 @@ def div(a, b):
         raise ZeroDivisionError('value b cannot be 0.')
     return b / a
 
-def log(a, b):
-    if a <= 0:
-        raise ValueError('invalid base cannot be 0 or negative')
-    if a == 1:
-        raise ValueError('invalid base cannot be 1')
-    return math.log(b, a)
-
-def exp(a, b):
-    return a ** b
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
-    return a * b
-
 def logarithm(a, b):
     if a == 1 or a <= 0:
         raise ValueError("Base must be a positive number not equal to one.")
@@ -54,5 +28,13 @@ def logarithm(a, b):
         raise ValueError("Input must be a positive number.")
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
+
+def square_root(a):
+    if a < 0:
+        raise ValueError("Cannot take the square root of a negative number.")
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
